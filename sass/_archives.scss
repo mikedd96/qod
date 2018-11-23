@@ -1,0 +1,30 @@
+.post-archives {
+    color: white;
+    font-family: 'Exo Medium';
+}
+.post-archives ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.post-archives li {
+    list-style: none;
+}
+.post-archives a {
+    text-decoration: none;
+    color: #0c0;
+    margin: 0 10px;
+}
+@media screen and (min-width: 600px) {
+.post-archives a {
+    font-size: 1.4rem;
+}
+}
+
+@media screen and (min-width: 1080px) {
+    .browse-archives {
+        flex-direction: column;
+    }
+}

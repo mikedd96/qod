@@ -1,0 +1,38 @@
+.error404, .error404 p {
+    font-family: 'Exo Medium';
+    color: white;
+}
+.error404 p {
+    font-family: 'Exo Medium';
+    color: white;
+}
+fieldset {
+    border: none;
+}
+input[type="search"] {
+    background-color: inherit;
+    border: #0c0 solid 2px;
+    width: 250px;
+} 
+.search-submit {
+    display: none;
+    padding: 0;
+    border: none;
+    background: none;
+    position: relative;
+    vertical-align: bottom;
+    box-shadow: none;
+}
+.search-icon {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1rem;
+    color: #0c0;
+    margin: auto 0;
+}
+.all-search {
+    display: flex;
+}
+.page-content p {
+    padding-right: 20rem;
+}

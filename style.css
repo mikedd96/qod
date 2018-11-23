@@ -221,6 +221,34 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Exo MediumItalic';
+  src: url("../../fonts/Exo-MediumItalic.eot");
+  src: url("../../fonts/Exo-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-MediumItalic.woff2") format("woff2"), url("../../fonts/Exo-MediumItalic.woff") format("woff"), url("../../fonts/Exo-MediumItalic.ttf") format("truetype"), url("../../fonts/Exo-MediumItalic.svg#Exo-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo Medium';
+  src: url("../../fonts/Exo-Medium.eot");
+  src: url("../../fonts/Exo-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Medium.woff2") format("woff2"), url("../../fonts/Exo-Medium.woff") format("woff"), url("../../fonts/Exo-Medium.ttf") format("truetype"), url("../../fonts/Exo-Medium.svg#Exo-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Exo LightItalic';
+  src: url("../../fonts/Exo-LightItalic.eot");
+  src: url("../../fonts/Exo-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-LightItalic.woff2") format("woff2"), url("../../fonts/Exo-LightItalic.woff") format("woff"), url("../../fonts/Exo-LightItalic.ttf") format("truetype"), url("../../fonts/Exo-LightItalic.svg#Exo-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Exo Light';
+  src: url("../../fonts/Exo-Light.eot");
+  src: url("../../fonts/Exo-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Exo-Light.woff2") format("woff2"), url("../../fonts/Exo-Light.woff") format("woff"), url("../../fonts/Exo-Light.ttf") format("truetype"), url("../../fonts/Exo-Light.svg#Exo-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -428,7 +456,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -549,6 +576,9 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+footer {
+  height: 200px; }
+
 .sticky {
   display: block; }
 
@@ -570,6 +600,48 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5rem; }
+
+#masthead {
+  display: none; }
+
+body {
+  background: #222222; }
+
+html {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #ffffff; }
+
+@media screen and (min-width: 1080px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 12rem; }
+  .browse-archives, .error-404, .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .browse-archives .entry-title::before, .error-404::before, .entry-content::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10d";
+    font-weight: 900;
+    color: #0c0;
+    font-size: 100px;
+    margin-right: 4rem; }
+  .browse-archives .entry-title::after, .error-404::after, .entry-content::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f10e";
+    font-weight: 900;
+    color: #0c0;
+    font-size: 100px;
+    margin-left: 3rem; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -593,3 +665,185 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+#new-quote-button {
+  border: 2.5px solid #0c0;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  color: #0c0;
+  font-family: 'Exo Medium'; }
+
+.post {
+  font-family: 'Exo Medium';
+  color: #ffffff; }
+
+.site-main {
+  margin-left: 10px; }
+
+@media screen and (min-width: 1080px) {
+  .frontpage-image {
+    padding-top: 3rem; }
+  .site-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .site-main button {
+    width: 200px; }
+  .entry-content p {
+    font-size: 2.5rem;
+    width: 50%; }
+  .entry-meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    margin: auto; }
+  .source {
+    margin: auto 0; }
+  .source a {
+    color: #0c0;
+    text-decoration: none; } }
+
+footer {
+  padding-top: 5rem; }
+
+.menu {
+  list-style: none;
+  padding-left: 0;
+  display: inline;
+  margin-left: 5px; }
+
+.menu li {
+  text-decoration: none;
+  border-right: 2px grey solid;
+  display: inline; }
+  .menu li:last-child {
+    border: none; }
+
+.menu li a {
+  text-decoration: none;
+  color: #0c0;
+  padding: 1rem; }
+
+.site-info {
+  display: none; }
+
+footer p {
+  font-family: 'Exo Medium';
+  margin-left: 10px; }
+
+.brought {
+  color: #fff;
+  margin-top: 0; }
+
+.red {
+  color: #0c0; }
+
+@media screen and (min-width: 600px) {
+  .menu li {
+    text-decoration: none;
+    border-right: 2px grey solid;
+    display: inline; }
+    .menu li:last-child {
+      border-right: 2px grey solid; }
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+
+.error404, .error404 p {
+  font-family: 'Exo Medium';
+  color: white; }
+
+.error404 p {
+  font-family: 'Exo Medium';
+  color: white; }
+
+fieldset {
+  border: none; }
+
+input[type="search"] {
+  background-color: inherit;
+  border: #0c0 solid 2px;
+  width: 250px; }
+
+.search-submit {
+  display: none;
+  padding: 0;
+  border: none;
+  background: none;
+  position: relative;
+  vertical-align: bottom;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.search-icon {
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-size: 1rem;
+  color: #0c0;
+  margin: auto 0; }
+
+.all-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-content p {
+  padding-right: 20rem; }
+
+.entry-content {
+  font-family: Exo Medium;
+  color: white; }
+
+.about-span a {
+  text-decoration: none;
+  color: #0c0; }
+
+.about-all p {
+  font-size: 1rem;
+  width: 100%; }
+
+.post-archives {
+  color: white;
+  font-family: 'Exo Medium'; }
+
+.post-archives ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.post-archives li {
+  list-style: none; }
+
+.post-archives a {
+  text-decoration: none;
+  color: #0c0;
+  margin: 0 10px; }
+
+@media screen and (min-width: 600px) {
+  .post-archives a {
+    font-size: 1.4rem; } }
+
+@media screen and (min-width: 1080px) {
+  .browse-archives {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }

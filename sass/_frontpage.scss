@@ -1,0 +1,50 @@
+#new-quote-button {
+	border: 2.5px solid #0c0;
+	background-color: transparent;
+	padding: 1rem 1.5rem;
+	box-shadow: none;
+	text-shadow: none;
+    color: #0c0;
+    font-family: 'Exo Medium'
+}
+.post {
+    font-family: 'Exo Medium';
+    color: #ffffff;
+}
+.site-main {
+    margin-left: 10px
+}
+@media screen and (min-width: 1080px) {
+.frontpage-image {
+    padding-top: 3rem;
+}   
+// .content-area {
+//     display: flex;
+//     justify-content: center;
+// }
+.site-main {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.site-main button {
+    width: 200px;
+}
+.entry-content p {
+    font-size: 2.5rem;
+    width: 50%
+}
+.entry-meta {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+.source {
+    margin: auto 0;
+}
+.source a {
+    color: #0c0;
+    text-decoration: none;
+}
+}

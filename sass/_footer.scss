@@ -1,0 +1,53 @@
+footer {
+    padding-top: 5rem;
+}
+.menu {
+    list-style: none;
+    padding-left: 0;
+    display: inline;
+    margin-left: 5px;
+}
+.menu li {
+    text-decoration: none;
+    border-right: 2px grey solid;
+    display: inline;
+    &:last-child {
+        border: none;
+    }
+}
+.menu li a {
+    text-decoration: none;
+    color: #0c0;
+    padding: 1rem;
+}
+.site-info {
+    display: none;
+}
+footer p {
+    font-family: 'Exo Medium';
+    margin-left: 10px;
+}
+.brought {
+    color: #fff;
+    margin-top: 0;
+}
+.red {
+    color: #0c0;
+}
+@media screen and (min-width: 600px) {
+.menu li {
+    text-decoration: none;
+    border-right: 2px grey solid;
+    display: inline; 
+    &:last-child {
+        border-right: 2px grey solid;
+    } 
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+}
+@media screen and (min-width: 1080px) {
+    
+}

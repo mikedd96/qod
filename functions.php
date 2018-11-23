@@ -58,8 +58,29 @@ add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
 function qod_scripts() {
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	//TODOne add font-awesome
+	wp_enqueue_style( 'fontawesome',"https://use.fontawesome.com/releases/v5.5.0/css/all.css" );
+
+	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() .
+	 '/build/js/navigation.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() .
+	 '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+
+
+	//TODOne add a custoom javascript file
+	wp_enqueue_script( 'qod-script', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery')
+	, '', true );
+
+	//TODOne try to add a localized script
+    wp_localize_script( 'qod-script', 'qod_vars', array(
+	   'rest_url' => esc_url_raw( rest_url() ),
+	   'home_url' => esc_url_raw( home_url() ),
+	   'nonce' => wp_create_nonce( 'wp_rest' ),
+	   'success' => 'Thanks, your quote has been submitted!',
+	   'failure' => 'your submission could not be processed.',
+	//    'post_id' => get_the_ID()
+   ) );
+
 }
 add_action( 'wp_enqueue_scripts', 'qod_scripts' );
 

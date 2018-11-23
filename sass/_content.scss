@@ -3,7 +3,9 @@
 --------------------------------------------------------------*/
 
 /* Posts and pages */
-
+footer {
+	height: 200px;
+}
 .sticky {
 	display: block;
 }
@@ -30,4 +32,43 @@
 .page-links {
 	clear: both;
 	margin: 0 0 $base__space-unit;
+}
+#masthead {
+	display: none;
+}
+body {
+	background: #222222;
+}
+html {
+	line-height: 1.5;
+	font-size: 1rem;
+	color: #ffffff;
+}
+@media screen and (min-width: 1080px) {
+	.footer-content {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 12rem;
+	}
+	.browse-archives, .error-404, .entry-content {
+		display: flex;
+		justify-content: center
+	}
+	.browse-archives .entry-title::before, .error-404::before, .entry-content::before {
+		font-family: "Font Awesome 5 Free";
+		content: "\f10d";
+		font-weight: 900;
+		color: #0c0;
+		font-size: 100px;
+		margin-right: 4rem;
+	}
+	
+	.browse-archives .entry-title::after, .error-404::after, .entry-content::after {
+		font-family: "Font Awesome 5 Free";
+		content: "\f10e";
+		font-weight: 900;
+		color: #0c0;
+		font-size: 100px;
+		margin-left: 3rem;
+	}
 }
