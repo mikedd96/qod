@@ -81,6 +81,7 @@ const $author = $('.entry-title')
             //output message for user stating something went wrong
          });
       }
+      
 
     });// end of doc ready
 })(jQuery);

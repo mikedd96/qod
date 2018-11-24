@@ -1,30 +1,51 @@
-.post-archives {
+.all-archives {
     color: white;
     font-family: 'Exo Medium';
 }
-.post-archives ul {
+.browse-archives h1, .browse-archives h2 {
+    color: white;
+    font-family: 'Exo Medium';
+}
+.all-archives ul {
     margin: 0;
     padding: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.post-archives li {
+.all-archives li {
     list-style: none;
 }
-.post-archives a {
+.all-archives a {
     text-decoration: none;
     color: #0c0;
     margin: 0 10px;
 }
 @media screen and (min-width: 600px) {
-.post-archives a {
-    font-size: 1.4rem;
+.all-archives a {
+    font-size: 1.4rem !important;
 }
+
 }
 
 @media screen and (min-width: 1080px) {
     .browse-archives {
         flex-direction: column;
+    }
+    .archive-headers {
+        width: 50%;
+        color: white;
+        font-family: 'Exo Medium';
+    }
+    .entry-header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .all-archives {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 }

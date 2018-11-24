@@ -32,6 +32,8 @@
 <?php
 
 if(is_home() || is_single() ): ?>
+<div class="quote-button">
 <button type="button" id="new-quote-button">Show Me Another!</button>
+</div>
 <?php endif; ?>
 

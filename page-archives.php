@@ -12,12 +12,15 @@ get_header(); ?>
 		<img class="frontpage-image" src="<?php echo get_template_directory_uri() . './image/qod-logo.svg';?>" />
 
 			<section class="browse-archives">
-				<header class="enttry-header">
+				<header class="entry-header">
+					<div class="archive-headers">
 					<p><?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-				</header>
-
-				<div class="post-archives">
 					<h2>Quote Authors</h2>
+				</div>
+				</header>
+				<div class="all-archives">
+				<div class="post-archives">
+					<!-- <h2>Quote Authors</h2> -->
 					<ul>
 						<?php 
 						  $posts = get_posts( 'posts_per_page=-1');
@@ -30,7 +33,7 @@ get_header(); ?>
 
 					</div>
 
-					<div classs="category-archives">
+					<div class="category-archives">
 						<h2>Categories</h2>
 						<ul>
 							<?php wp_list_categories( 'title_li='); ?>
@@ -50,6 +53,7 @@ get_header(); ?>
 						) );
 						?>
 					</div>
+						 </div>
 			</section>
 			
 		</main><!-- #main -->

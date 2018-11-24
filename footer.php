@@ -22,7 +22,7 @@
 			<a href="archives">Archives</a>
 			</li>
 			<li>
-			<a href="submit a quote">Submit A Quote</a>
+			<a href="submit">Submit A Quote</a>
 			</li>
 		</ul>
 <p class="brought">Brought to you by <span class="red">RED Academy<span></p>

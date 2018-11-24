@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<img class="frontpage-image" src="<?php echo get_template_directory_uri() . './image/qod-logo.svg';?>" />
-
+		<div class="quote-archives">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
@@ -30,12 +30,14 @@ get_header(); ?>
 
 			<?php the_posts_navigation(); ?>
 
+			<?php qod_numbered_pagination(); ?>
+
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

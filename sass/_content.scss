@@ -54,7 +54,7 @@ html {
 		display: flex;
 		justify-content: center
 	}
-	.browse-archives .entry-title::before, .error-404::before, .entry-content::before {
+	.search .page-header::before, .archive .page-header::before, .browse-archives .entry-header::before, .error-404::before, .home .entry-content::before {
 		font-family: "Font Awesome 5 Free";
 		content: "\f10d";
 		font-weight: 900;
@@ -63,12 +63,12 @@ html {
 		margin-right: 4rem;
 	}
 	
-	.browse-archives .entry-title::after, .error-404::after, .entry-content::after {
+	.search .page-header::after, .archive .page-header::after, .browse-archives .entry-header::after, .error-404::after, .home .entry-content::after {
 		font-family: "Font Awesome 5 Free";
 		content: "\f10e";
 		font-weight: 900;
 		color: #0c0;
 		font-size: 100px;
-		margin-left: 3rem;
+		margin-left: 4rem;
 	}
 }

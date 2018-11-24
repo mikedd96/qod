@@ -53,6 +53,11 @@ if(
     !is_admin() && $query->is_main_query() ){
         $query->set( 'posts_per_page', 5 );
     }
+    if( $query->is_search() ) {
+
+        $query->set('posts_per_page',15);
+ 
+    }
 }
 
 add_action( 'pre_get_posts', 'qod_modify_arcives');

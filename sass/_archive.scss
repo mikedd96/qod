@@ -1,0 +1,65 @@
+.quote-archives {
+    font-family: 'Exo Medium';
+    color: white;
+}
+.quote-archives .page-title {
+    border-bottom: 1px white dotted;
+    padding: 15px 0;
+}
+.quote-archives .entry-meta {
+    display: flex;
+}
+.quote-archives span {
+    margin: auto 0;
+}
+.quote-archives p {
+    font-size: 1.25rem;
+    // border-top: 1px white dotted;
+    padding-bottom: 2rem;
+
+    // &:first-of-type {
+    //     border-top: none;
+    // }
+}
+.quote-archives h2 {
+    font-size: 1.25rem;
+}
+.archive .entry-meta {
+    border-bottom: 1px dotted white;
+    padding-bottom: 2rem;
+}
+.nav-links {
+    display: none;
+}
+.number-pagination a {
+    color: #0c0;
+    text-decoration: none;
+    margin: 3px;
+}
+@media screen and (min-width: 600px) {
+    .quote-archives p {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1080px) {
+    // .quote-archives .page-title {
+    //     border-bottom: none;
+    // }
+    .archive .page-title {
+        width: 50%;
+        color: white;
+        font-family: 'Exo Medium';
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        height: 75px;
+        border-bottom: 1px dotted white;
+        padding-top: 0;
+    }
+    .archive .page-header {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        height: 80px;
+    }
+    
+}
