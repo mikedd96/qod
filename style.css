@@ -628,20 +628,23 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .search .page-header::before, .archive .page-header::before, .browse-archives .entry-header::before, .error-404::before, .home .entry-content::before {
+  .quote-submission::before, .search .page-header::before, .archive .page-header::before, .browse-archives .entry-header::before, .error-404::before, .home .entry-content::before {
     font-family: "Font Awesome 5 Free";
     content: "\f10d";
     font-weight: 900;
     color: #0c0;
     font-size: 100px;
     margin-right: 4rem; }
-  .search .page-header::after, .archive .page-header::after, .browse-archives .entry-header::after, .error-404::after, .home .entry-content::after {
+  .quote-submission::after, .search .page-header::after, .archive .page-header::after, .browse-archives .entry-header::after, .error-404::after, .home .entry-content::after {
     font-family: "Font Awesome 5 Free";
     content: "\f10e";
     font-weight: 900;
     color: #0c0;
     font-size: 100px;
-    margin-left: 4rem; } }
+    margin-left: 4rem; }
+  img.frontpage-image {
+    width: 700px;
+    margin: auto; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -995,6 +998,38 @@ input[type="search"] {
     margin: 0; }
   .search .entry-title {
     margin: 0; } }
+
+.page-id-208 .frontpage-image {
+  margin-top: 3rem; }
+
+.quote-submission {
+  font-family: 'Exo Medium';
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.quote-submission a {
+  color: #0c0; }
+
+.all-submit-out {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2rem; }
+
+.quote-submission-form {
+  font-family: 'Exo Medium'; }
 
 input[type="text"], input[type="url"] {
   width: 250px;

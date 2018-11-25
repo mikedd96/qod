@@ -12,9 +12,7 @@ get_header(); ?>
         <img class="frontpage-image" src="<?php echo get_template_directory_uri() . './image/qod-logo.svg';?>" />
 
 		<section class="quote-submission">
-            <header class="entry-header">
-                <?php the_title('<h1 class="entry-title">','</h1>'); ?>
-            </header>
+            
 
             <?php if( is_user_logged_in() && current_user_can( 'edit_posts')): ?>
                 <div class="quote-submission-wrapper">
@@ -40,9 +38,13 @@ get_header(); ?>
                 </div>
 
                 <?php else: ?>
+                <div class="all-submit-out">
+                <header class="entry-header">
+                <?php the_title('<h1 class="entry-title">','</h1>'); ?>
+            </header>
                 <p> sorry, please log in to submit a quote.</p>
                 <p><?php echo sprintf( '<a href"%1s">%2s</a>', esc_url( wp_login_url() ), 'click here to login.' );?></p>
-
+                </div>
             <?php endif; ?>
         </section
 
