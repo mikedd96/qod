@@ -7,11 +7,12 @@
     color: white;
     display: flex;
     width: 90%;
-    margin: auto;
-    justify-content: center;
+    // margin: auto;
+    // justify-content: center;
 }
 .quote-submission a {
     color: #0c0;
+    text-decoration: none;
 }
 .all-submit-out {
     width: 50%;
@@ -25,14 +26,46 @@
     font-family: 'Exo Medium';
 }
 input[type="text"], input[type="url"] {
-    width: 250px;
+    width: 200px;
     border: #0c0 2px solid;
     background-color: inherit;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
 }
 textarea {
     border: #0c0 2px solid;
     background-color: inherit;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
 }
 label, .entry-title {
     color: white;
+}
+.author, .content, .source, .url {
+    display: flex;
+    flex-direction: column;
+}
+input.submit-quote-button {
+    border: 2.5px solid #0c0;
+	background-color: transparent;
+	padding: .75rem 2rem;
+	box-shadow: none;
+	text-shadow: none;
+    color: #0c0;
+    font-family: 'Exo Medium'
+}
+@media screen and (min-width: 600px) {
+    input[type="text"], input[type="url"] {
+        width: 400px;
+        border: #0c0 2px solid;
+        background-color: inherit;
+        margin-bottom: 1rem;
+        margin-top: .5rem;
+    }
+    .quote-submission-wrapper {
+        width: 100%;
+    }
+    .quote-submission {
+        width: 100%;
+    }
 }

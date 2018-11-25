@@ -612,6 +612,14 @@ html {
   font-size: 1rem;
   color: #ffffff; }
 
+.frontpage-image {
+  width: 300px;
+  padding-top: 3rem; }
+
+.site-main {
+  margin-left: 10px;
+  margin-right: 10px; }
+
 @media screen and (min-width: 1080px) {
   .footer-content {
     display: -webkit-box;
@@ -644,7 +652,10 @@ html {
     margin-left: 4rem; }
   img.frontpage-image {
     width: 700px;
-    margin: auto; } }
+    margin: auto; }
+  .site-main {
+    width: 90%;
+    margin: 0 auto; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -681,9 +692,6 @@ object {
 .post {
   font-family: 'Exo Medium';
   color: #ffffff; }
-
-.site-main {
-  margin-left: 10px; }
 
 @media screen and (min-width: 1080px) {
   .frontpage-image {
@@ -953,9 +961,6 @@ input[type="search"] {
   text-decoration: none;
   color: #0c0; }
 
-.frontpage-image {
-  width: 300px; }
-
 @media screen and (min-width: 600px) {
   .frontpage-image {
     width: initial; } }
@@ -1008,14 +1013,11 @@ input[type="search"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%;
-  margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  width: 90%; }
 
 .quote-submission a {
-  color: #0c0; }
+  color: #0c0;
+  text-decoration: none; }
 
 .all-submit-out {
   width: 50%;
@@ -1032,13 +1034,48 @@ input[type="search"] {
   font-family: 'Exo Medium'; }
 
 input[type="text"], input[type="url"] {
-  width: 250px;
+  width: 200px;
   border: #0c0 2px solid;
-  background-color: inherit; }
+  background-color: inherit;
+  margin-bottom: 1rem;
+  margin-top: .5rem; }
 
 textarea {
   border: #0c0 2px solid;
-  background-color: inherit; }
+  background-color: inherit;
+  margin-bottom: 1rem;
+  margin-top: .5rem; }
 
 label, .entry-title {
   color: white; }
+
+.author, .content, .source, .url {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+input.submit-quote-button {
+  border: 2.5px solid #0c0;
+  background-color: transparent;
+  padding: .75rem 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  color: #0c0;
+  font-family: 'Exo Medium'; }
+
+@media screen and (min-width: 600px) {
+  input[type="text"], input[type="url"] {
+    width: 400px;
+    border: #0c0 2px solid;
+    background-color: inherit;
+    margin-bottom: 1rem;
+    margin-top: .5rem; }
+  .quote-submission-wrapper {
+    width: 100%; }
+  .quote-submission {
+    width: 100%; } }

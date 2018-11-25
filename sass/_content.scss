@@ -44,6 +44,14 @@ html {
 	font-size: 1rem;
 	color: #ffffff;
 }
+.frontpage-image {
+	width: 300px;
+	padding-top: 3rem;
+}
+.site-main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 @media screen and (min-width: 1080px) {
 	.footer-content {
 		display: flex;
@@ -74,6 +82,9 @@ html {
 	img.frontpage-image {
 		width: 700px;
 		margin: auto;
-		
+	}
+	.site-main {
+		width: 90%;
+		margin: 0 auto;
 	}
 }
