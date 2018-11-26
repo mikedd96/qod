@@ -790,7 +790,7 @@ footer p {
   .brought {
     padding-left: 1rem; } }
 
-.error404, .error404 p {
+.error404 {
   font-family: 'Exo Medium';
   color: white; }
 
@@ -1039,6 +1039,9 @@ input[type="search"] {
 .quote-submission a {
   color: #0c0;
   text-decoration: none; }
+
+.quote-submission a:hover {
+  color: #090; }
 
 .all-submit-out {
   display: -webkit-box;

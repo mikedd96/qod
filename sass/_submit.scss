@@ -7,17 +7,17 @@
     color: white;
     display: flex;
     width: 100%;
-    // margin: auto;
-    // justify-content: center;
 }
 .quote-submission a {
     color: #0c0;
     text-decoration: none;
 }
+.quote-submission a:hover {
+    color: #090;
+}
 .all-submit-out {
     display: flex;
     flex-direction: column;
-    // margin: 0 auto;
     padding-top: 2rem;
     width: 90%;
         & .entry-header {

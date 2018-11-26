@@ -14,12 +14,7 @@
 }
 .quote-archives p {
     font-size: 1.25rem;
-    // border-top: 1px white dotted;
     padding-bottom: 2rem;
-
-    // &:first-of-type {
-    //     border-top: none;
-    // }
 }
 .quote-archives h2 {
     font-size: 1.25rem;
@@ -42,9 +37,6 @@
     }
 }
 @media screen and (min-width: 1080px) {
-    // .quote-archives .page-title {
-    //     border-bottom: none;
-    // }
     .archive .page-title {
         width: 50%;
         color: white;
