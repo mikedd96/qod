@@ -1,23 +1,16 @@
-# Quotes on Dev Starter
+Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Quotes on dev is a randomized quote website for grabbing quotes about developer work.It was made using php, sass, css, javascript and wordpress.
 
-## Installation
+![screenshot](image/2018-11-26.png "Qod homepage screenshot")
 
-### 1. Download me (don't clone me!)
+to run Qod a server must be running such as Wamp, mamp or xamp. And to reach the site the url is localhost/quotes-on-dev.
 
-Then add me to your `wp-content/themes` directory.
+skills learnt from this project
+This project involved css organization because most of the pages were very similiar so using organized and single parameters that would apply to all pages were helpful and so i learnt about better sass organization and will be able to look at shortcuts to patterns and implement them earlier on for even better organization. as well this taught me about what javascript code to look for because this project and inhabitent used similiar code in javascript, the useful wordpress javascript has become a little more clarified for me. these were 2 main learning points for me from this project. other small ones were clarification on API and use of margin auto to center elements.  
 
-### 2. Rename the `quotesondev-starter-master` directory
+Authors
+-Michael Dunk
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+boilerplate/template Authors/Acknowledgements
+-Red Academy
