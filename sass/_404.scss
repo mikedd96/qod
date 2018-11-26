@@ -6,13 +6,19 @@
     font-family: 'Exo Medium';
     color: white;
 }
+.error-404 .page-content p {
+    padding: 0;
+}
 fieldset {
     border: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 input[type="search"] {
     background-color: inherit;
     border: #0c0 solid 2px;
     width: 250px;
+    color: white;
 } 
 .search-submit {
     display: none;

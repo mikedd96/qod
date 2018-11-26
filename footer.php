@@ -16,7 +16,7 @@
 				<div class="footer-content">
 				<ul class="menu">
 			<li>
-				<a href="about">About</a>
+				<a class="footer-about" href="about">About</a>
 			</li>
 			<li>
 			<a href="archives">Archives</a>

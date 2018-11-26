@@ -629,21 +629,21 @@ html {
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: 12rem; }
-  .browse-archives, .error-404, .entry-content {
+  .about-content, .browse-archives, .error-404, .entry-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .quote-submission::before, .search .page-header::before, .archive .page-header::before, .browse-archives .entry-header::before, .error-404::before, .home .entry-content::before {
+  .about-content::before, .quote-submission::before, .search .page-header::before, .archive .page-header::before, .browse-archives .entry-header::before, .error-404::before, .home .entry-content::before {
     font-family: "Font Awesome 5 Free";
     content: "\f10d";
     font-weight: 900;
     color: #0c0;
     font-size: 100px;
     margin-right: 4rem; }
-  .quote-submission::after, .search .page-header::after, .archive .page-header::after, .browse-archives .entry-header::after, .error-404::after, .home .entry-content::after {
+  .about-content::after, .quote-submission::after, .search .page-header::after, .archive .page-header::after, .browse-archives .entry-header::after, .error-404::after, .home .entry-content::after {
     font-family: "Font Awesome 5 Free";
     content: "\f10e";
     font-weight: 900;
@@ -733,13 +733,16 @@ object {
             justify-content: center; } }
 
 footer {
-  padding-top: 5rem; }
+  padding-top: 5rem;
+  margin-left: 10px; }
 
 .menu {
   list-style: none;
   padding-left: 0;
   display: inline;
   margin-left: 5px; }
+  .menu:first-child {
+    margin-left: 0; }
 
 .menu li {
   text-decoration: none;
@@ -753,12 +756,14 @@ footer {
   color: #0c0;
   padding: 1rem; }
 
+a.footer-about {
+  padding-left: 0rem !important; }
+
 .site-info {
   display: none; }
 
 footer p {
-  font-family: 'Exo Medium';
-  margin-left: 10px; }
+  font-family: 'Exo Medium'; }
 
 .brought {
   color: #fff;
@@ -781,6 +786,10 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; } }
 
+@media screen and (min-width: 600px) {
+  .brought {
+    padding-left: 1rem; } }
+
 .error404, .error404 p {
   font-family: 'Exo Medium';
   color: white; }
@@ -789,13 +798,19 @@ footer p {
   font-family: 'Exo Medium';
   color: white; }
 
+.error-404 .page-content p {
+  padding: 0; }
+
 fieldset {
-  border: none; }
+  border: none;
+  padding-left: 0;
+  margin-left: 0; }
 
 input[type="search"] {
   background-color: inherit;
   border: #0c0 solid 2px;
-  width: 250px; }
+  width: 250px;
+  color: white; }
 
 .search-submit {
   display: none;
@@ -834,6 +849,15 @@ input[type="search"] {
   font-size: 1rem;
   width: 100%; }
 
+.frontpage-image {
+  display: inline; }
+
+@media screen and (min-width: 1080px) {
+  .about-content .entry-header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
+
 .all-archives {
   color: white;
   font-family: 'Exo Medium'; }
@@ -858,7 +882,8 @@ input[type="search"] {
 .all-archives a {
   text-decoration: none;
   color: #0c0;
-  margin: 0 10px; }
+  margin: 0 20px;
+  margin-left: 0; }
 
 @media screen and (min-width: 600px) {
   .all-archives a {
@@ -995,10 +1020,6 @@ input[type="search"] {
             flex-direction: column;
     margin: 0 auto;
     padding-top: 2rem; }
-  .entry-header {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
   .search p {
     margin: 0; }
   .search .entry-title {
@@ -1013,14 +1034,13 @@ input[type="search"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90%; }
+  width: 100%; }
 
 .quote-submission a {
   color: #0c0;
   text-decoration: none; }
 
 .all-submit-out {
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1028,7 +1048,12 @@ input[type="search"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  width: 90%; }
+  .all-submit-out .entry-header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
 
 .quote-submission-form {
   font-family: 'Exo Medium'; }
@@ -1079,3 +1104,9 @@ input.submit-quote-button {
     width: 100%; }
   .quote-submission {
     width: 100%; } }
+
+@media screen and (min-width: 1080px) {
+  .quote-submission-wrapper .entry-header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }

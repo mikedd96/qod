@@ -1,11 +1,15 @@
 footer {
     padding-top: 5rem;
+    margin-left: 10px;
 }
 .menu {
     list-style: none;
     padding-left: 0;
     display: inline;
     margin-left: 5px;
+    &:first-child {
+        margin-left: 0;
+    }
 }
 .menu li {
     text-decoration: none;
@@ -19,13 +23,16 @@ footer {
     text-decoration: none;
     color: #0c0;
     padding: 1rem;
+    
+}
+a.footer-about {
+    padding-left: 0rem !important;
 }
 .site-info {
     display: none;
 }
 footer p {
     font-family: 'Exo Medium';
-    margin-left: 10px;
 }
 .brought {
     color: #fff;
@@ -48,6 +55,8 @@ footer p {
     flex-wrap: wrap;
 }
 }
-@media screen and (min-width: 1080px) {
-    
+@media screen and (min-width: 600px) {
+    .brought {
+        padding-left: 1rem;
+    }
 }

@@ -6,7 +6,7 @@
     font-family: 'Exo Medium';
     color: white;
     display: flex;
-    width: 90%;
+    width: 100%;
     // margin: auto;
     // justify-content: center;
 }
@@ -15,11 +15,14 @@
     text-decoration: none;
 }
 .all-submit-out {
-    width: 50%;
     display: flex;
     flex-direction: column;
     // margin: 0 auto;
     padding-top: 2rem;
+    width: 90%;
+        & .entry-header {
+            justify-content: flex-start;
+        }
 }
 // logged in
 .quote-submission-form {
@@ -69,3 +72,8 @@ input.submit-quote-button {
         width: 100%;
     }
 }
+@media screen and (min-width: 1080px) {
+    .quote-submission-wrapper .entry-header {
+        justify-content: flex-start;
+    }
+    }
