@@ -9,7 +9,7 @@
     width: 100%;
 }
 .quote-submission a {
-    color: #0c0;
+    color: $primary-color;
     text-decoration: none;
 }
 .quote-submission a:hover {
@@ -30,13 +30,13 @@
 }
 input[type="text"], input[type="url"] {
     width: 200px;
-    border: #0c0 2px solid;
+    border: $primary-color 2px solid;
     background-color: inherit;
     margin-bottom: 1rem;
     margin-top: .5rem;
 }
 textarea {
-    border: #0c0 2px solid;
+    border: $primary-color 2px solid;
     background-color: inherit;
     margin-bottom: 1rem;
     margin-top: .5rem;
@@ -44,23 +44,23 @@ textarea {
 label, .entry-title {
     color: white;
 }
-.author, .content, .source, .url {
+.quote-submission .author, .content, .source, .url {
     display: flex;
     flex-direction: column;
 }
 input.submit-quote-button {
-    border: 2.5px solid #0c0;
+    border: 2.5px solid $primary-color;
 	background-color: transparent;
 	padding: .75rem 2rem;
 	box-shadow: none;
 	text-shadow: none;
-    color: #0c0;
+    color: $primary-color;
     font-family: 'Exo Medium'
 }
 @media screen and (min-width: 600px) {
     input[type="text"], input[type="url"] {
         width: 400px;
-        border: #0c0 2px solid;
+        border: $primary-color 2px solid;
         background-color: inherit;
         margin-bottom: 1rem;
         margin-top: .5rem;

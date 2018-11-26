@@ -1,10 +1,10 @@
 #new-quote-button {
-	border: 2.5px solid #0c0;
+	border: 2.5px solid $primary-color;
 	background-color: transparent;
 	padding: 1rem 1.5rem;
 	box-shadow: none;
 	text-shadow: none;
-    color: #0c0;
+    color: $primary-color;
     font-family: 'Exo Medium'
 }
 .post {
@@ -37,7 +37,7 @@
     margin: auto 0;
 }
 .source a {
-    color: #0c0;
+    color: $primary-color;
     text-decoration: none;
 }
 .quote-button {

@@ -1077,7 +1077,7 @@ textarea {
 label, .entry-title {
   color: white; }
 
-.author, .content, .source, .url {
+.quote-submission .author, .content, .source, .url {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
