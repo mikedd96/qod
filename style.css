@@ -1,9 +1,8 @@
 /*!
-Theme Name: Quotes on Dev Starter Theme
+Theme Name: Quotes on Dev
 Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Author: michael dunk
+Description: A WordPress theme for the Quotes on Dev project.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -904,9 +903,9 @@ input[type="search"] {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .all-archives {
     width: 50%;
     display: -webkit-box;
@@ -1085,6 +1084,9 @@ label, .entry-title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.home span.source {
+  display: inline; }
 
 input.submit-quote-button {
   border: 2.5px solid #0c0;

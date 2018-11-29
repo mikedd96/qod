@@ -48,6 +48,9 @@ label, .entry-title {
     display: flex;
     flex-direction: column;
 }
+.home span.source {
+    display: inline;
+}
 input.submit-quote-button {
     border: 2.5px solid $primary-color;
 	background-color: transparent;

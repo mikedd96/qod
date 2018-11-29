@@ -1,11 +1,9 @@
 (function ($) {
+
+    $(document).ready(function () {
 const $quotes = $('.entry-content')
 const $author = $('.entry-title')
-    $(document).ready(function () {
-
       let lastPage = '';
-      // const $quotes =$('.entry-content p')
-      //get a random post and append content to dom
       $('#new-quote-button').on('click', function(event){
          event.preventDefault();
          getQuote();
@@ -13,7 +11,7 @@ const $author = $('.entry-title')
 
       function getQuote(){
 
-         lastPage = document.url;
+         lastPage = document.URL;
 
 
          $.ajax({
@@ -24,13 +22,9 @@ const $author = $('.entry-title')
             $('.entry-content').append(data[0].content.rendered);
             $author.empty();
             $('.entry-title').append(' — ' + data[0].slug);
-            //TODOne append content to dom to replace quote content with rest api content
             const quote = data[0];
-            // figure out post slug-done!
             history.pushState(null,null,qod_vars.home_url + '/' + quote.slug)
-         }).fail(function(err){
-            // TODO append message for user on fail saying something went wrong
-            console.log(err);
+         }).fail(function(err){            console.log(err);
          });
       }// end of getQuote
 
@@ -38,7 +32,6 @@ const $author = $('.entry-title')
          window.location.replace(lastPage);
       });
 
-      // submit form and create new quote post
       $('#quote-submission-form').on('submit', function(event) {
          event.preventDefault();
          postQuote();
@@ -46,8 +39,6 @@ const $author = $('.entry-title')
       });
 
       function postQuote(){
-
-         //get values of the form input
          const quoteTitle = $('#quote-author').val();
          const quoteContent = $('#quote-content').val();
          const quoteSource = $('#quote-source').val();
@@ -60,25 +51,22 @@ const $author = $('.entry-title')
                content: quoteContent,
                _qod_quote_source: quoteSource,
                _qod_quote_source_url: quoteUrl,
-               status: 'publish',
+               status: 'pending',
             },
                beforeSend: function(xhr) {
                   xhr.setRequestHeader( 'X-WP-Nonce', qod_vars.nonce );
             }
          }).done(function(){
-            console.log('response-worked');
-            //.slideUp the form
+            successAlert();
             $('#quote-submission-form').slideUp();
-            //append a success message
             function successAlert() {
-               succesAlert("something worked");
+               alert("quote submitted");
            }
          }).fail(function(){
-            console.log('something failed')
+            failAlert();
             function failAlert() {
                alert("something went wrong");
            }
-            //output message for user stating something went wrong
          });
       }
       

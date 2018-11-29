@@ -25,7 +25,7 @@
 			<a href="submit">Submit A Quote</a>
 			</li>
 		</ul>
-<p class="brought">Brought to you by <span class="red">RED Academy<span></p>
+<p class="brought">Brought to you by <span class="red">RED Academy</span></p>
 </div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

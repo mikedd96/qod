@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-        <img class="frontpage-image" src="<?php echo get_template_directory_uri() . './image/qod-logo.svg';?>" />
+        <img class="frontpage-image" src="<?php echo get_template_directory_uri() . './image/qod-logo.svg';?>" alt="quotes-on-dev-banner" />
 
 		<section class="quote-submission">
             
@@ -49,7 +49,7 @@ get_header(); ?>
                 <a href="http://localhost:3000/quotes-on-dev/wp-login.php">click here to login.</a>
                 </div>
             <?php endif; ?>
-        </section
+        </section>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
